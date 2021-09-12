@@ -50,6 +50,9 @@ export default function Home() {
 
   return (
     <>
+      <Head>
+        <meta name='google-site-verification' content='YDJtUvqI0Zj0h9Jm8FJet99_n57jJjM2ZzvB8dBq4WI' />
+      </Head>
       <NextSeo
         title='Interior Designers, Decorators in Bangalore | KODAI Interiors'
         description='Kodai Interiors provides design to build interior services specializing in both residential and commercial designs.'
