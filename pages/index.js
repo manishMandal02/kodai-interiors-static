@@ -9,6 +9,7 @@ import {
   FaFacebookSquare,
   FaLinkedin,
   FaYoutube,
+  FaWhatsappSquare,
 } from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
 
@@ -49,21 +50,23 @@ export default function Home() {
         id='navbar'
         className={`flex justify-around items-center h-20  pt-1 ms:overflow-hidden ms:justify-between ms:shadow-lg   fixed w-full bg-mainbg z-30 ms:flex-1 ms:flex-wrap ms:h-24 ms:items-center ms:pt-2`}
       >
-        <img
-          src='/header-logo.svg'
-          alt='logo'
-          // width='180'
-          // height='70'
-          className='cursor-pointer w-44 ms:w-32 ms:ml-2'
-        />
+        <a href='#'>
+          <img
+            src='/header-logo.svg'
+            alt='logo'
+            // width='180'
+            // height='70'
+            className='cursor-pointer w-44 ms:w-32 ms:ml-2'
+          />
+        </a>
         <ul className='text-white flex font-semibold text-xl ms:hidden '>
-          <li className='mx-4 cursor-pointer tracking-wide' onClick={() => goToSection('about-us')}>
+          <li className='mx-4 cursor-pointer tracking-wide menu-item' onClick={() => goToSection('about-us')}>
             About us
           </li>
-          <li className='mx-4 cursor-pointer tracking-wide' onClick={() => goToSection('services')}>
+          <li className='mx-4 cursor-pointer tracking-wide menu-item' onClick={() => goToSection('services')}>
             Services
           </li>
-          <li className='mx-4 cursor-pointer tracking-wide' onClick={() => goToSection('projects')}>
+          <li className='mx-4 cursor-pointer tracking-wide menu-item' onClick={() => goToSection('projects')}>
             Projects
           </li>
         </ul>
@@ -181,37 +184,37 @@ export default function Home() {
           <img src='/our-services-divider.svg' className='ms:scale-200 ms:-ml-4' />
         </div>
         <div className='flex flex-wrap flex-row px-28 justify-center items-center mb-20 ms:flex-col ms:px-0'>
-          <div className='mx-8 my-5 ms:my-2 ms:mx-5'>
+          <div className='mx-8 my-5 ms:my-2 ms:mx-5 cursor-pointer'>
             <Image src='/residentail.png' height='270' width='320' alt='residential design' />
             <div className=' text-white flex justify-center items-center font-normal py-2 font-poppins text-2xl border-2 border-primary -mt-2'>
               Residential Design
             </div>
           </div>
-          <div className='mx-8 my-5 ms:my-2 ms:mx-5'>
+          <div className='mx-8 my-5 ms:my-2 ms:mx-5 cursor-pointer'>
             <Image src='/commercial.png' height='270' width='320' alt='commercial design' />
             <div className=' text-white flex justify-center items-center font-normal py-2 font-poppins text-2xl border-2 border-primary -mt-2'>
               Commercial Design
             </div>
           </div>
-          <div className='mx-8 my-5 ms:my-2 ms:mx-5'>
+          <div className='mx-8 my-5 ms:my-2 ms:mx-5 cursor-pointer'>
             <Image src='/corporate.png' height='270' width='320' alt='corporate design' />
             <div className=' text-white flex justify-center items-center font-normal py-2 font-poppins text-2xl border-2 border-primary -mt-2'>
               Corporate Design
             </div>
           </div>
-          <div className='mx-8 my-5 ms:my-2 ms:mx-5'>
+          <div className='mx-8 my-5 ms:my-2 ms:mx-5 cursor-pointer'>
             <Image src='/hospitality.png' height='270' width='320' alt='hospitality design' />
             <div className=' text-white flex justify-center items-center font-normal py-2 font-poppins text-2xl border-2 border-primary -mt-2'>
               Hospitality Design
             </div>
           </div>
-          <div className='mx-8 my-5 ms:my-2 ms:mx-5'>
+          <div className='mx-8 my-5 ms:my-2 ms:mx-5 cursor-pointer'>
             <Image src='/restaurant.png' height='270' width='320' alt='restaurant design' />
             <div className=' text-white flex justify-center items-center font-normal py-2 font-poppins text-2xl border-2 border-primary -mt-2'>
               Restaurant Design
             </div>
           </div>
-          <div className='mx-8 my-5 ms:my-2 ms:mx-5'>
+          <div className='mx-8 my-5 ms:my-2 ms:mx-5 cursor-pointer'>
             <Image src='/industrial.png' height='270' width='320' alt='industrial design' />
             <div className=' text-white flex justify-center items-center font-normal py-2 font-poppins text-2xl border-2 border-primary -mt-2'>
               Industrial Design
@@ -225,41 +228,41 @@ export default function Home() {
         <div className='w-full flex justify-center items-center flex-col'>
           <div className=' flex justify-around items-center mb-12 ms:mb-6 ms:flex-wrap  ms:justify-center'>
             <button
-              className='bg-yellow1 text-gray-900 hover:text-white focus:text-white font-medium text-xl rounded-sm focus:bg-transparent hover:bg-transparent border-2 py-2 px-4 border-yellow1 mx-4  ms:w-7/12 ms:mb-2 ms:px-3 ms:py-1
+              className='bg-yellow1 text-gray-900 focus:text-white font-medium text-xl rounded-sm focus:bg-transparent hover:scale-105 transition-all duration-150 focus:scale-100  border-2 py-2 px-4 border-yellow1 mx-4  ms:w-7/12 ms:mb-2 ms:px-3 ms:py-1
             '
             >
               All Projects
             </button>
             <button
-              className='bg-yellow1 text-gray-900 hover:text-white focus:text-white font-medium text-xl rounded-sm focus:bg-transparent hover:bg-transparent border-2 py-2 px-4 border-yellow1 mx-4 ms:px-3 ms:py-1
+              className='bg-yellow1 text-gray-900 focus:text-white font-medium text-xl rounded-sm focus:bg-transparent hover:scale-105 transition-all duration-150 focus:scale-100  border-2 py-2 px-4 border-yellow1 mx-4 ms:px-3 ms:py-1
             '
             >
               Residential
             </button>
             <button
-              className='bg-yellow1 text-gray-900 hover:text-white focus:text-white font-medium text-xl rounded-sm focus:bg-transparent hover:bg-transparent border-2 py-2 px-4 border-yellow1 mx-4 ms:px-3 ms:py-1
+              className='bg-yellow1 text-gray-900 focus:text-white font-medium text-xl rounded-sm focus:bg-transparent hover:scale-105 transition-all duration-150 focus:scale-100  border-2 py-2 px-4 border-yellow1 mx-4 ms:px-3 ms:py-1
             '
             >
               Commercial
             </button>
           </div>
           <div className=' flex flex-wrap flex-row  justify-center items-center mb-20 ms:mb-16'>
-            <div className='m-6 ms:m-4 ms:my-2'>
+            <div className='m-6 ms:m-4 ms:my-2 cursor-pointer'>
               <Image src='/project-1.png' height='280' width='390' alt='project 1' />
             </div>
-            <div className='m-6 ms:m-4 ms:my-2'>
-              <Image src='/project-2.png' height='280' width='390' alt='project 2' />
+            <div className='m-6 ms:m-4 ms:my-2 cursor-pointer'>
+              <Image src='/project-2.png' height='280' width='390' alt='project  ' />
             </div>
-            <div className='m-6 ms:m-4 ms:my-2'>
+            <div className='m-6 ms:m-4 ms:my-2 cursor-pointer'>
               <Image src='/project-3.png' height='280' width='390' alt='project 3' />
             </div>
-            <div className='m-6 ms:m-4 ms:my-2'>
+            <div className='m-6 ms:m-4 ms:my-2 cursor-pointer'>
               <Image src='/project-1.png' height='280' width='390' alt='project 1' />
             </div>
-            <div className='m-6 ms:m-4 ms:my-2'>
+            <div className='m-6 ms:m-4 ms:my-2 cursor-pointer'>
               <Image src='/project-2.png' height='280' width='390' alt='project 2' />
             </div>
-            <div className='m-6 ms:m-4 ms:my-2'>
+            <div className='m-6 ms:m-4 ms:my-2 cursor-pointer'>
               <Image src='/project-3.png' height='280' width='390' alt='project 3' />
             </div>
           </div>
@@ -332,36 +335,64 @@ export default function Home() {
             </div>
             <div className='flex items-center text-base text-white  mb-5'>
               <FaPhoneAlt className='text-primary mr-4 scale-125 ms:mr-3' />
-              <p className='leading-tight text-xl ms:text-lg ms:leading-6'>
+              <a href='tel:7068719535' className='leading-tight text-xl ms:text-lg ms:leading-6'>
                 +91 7068719535
                 <br />
                 +91 9513882717
-              </p>
+              </a>
             </div>
             <div className='flex items-center text-base text-white  mb-5'>
               <FaEnvelope className='text-primary mr-5 scale-125 ms:mr-3' />
-              <p className='leading-tight text-xl ms:text-lg'>kodaiinteriors@gmail.com</p>
+              <a href='mailto:kodaiinteriors.com' className='leading-tight text-xl ms:text-lg'>
+                kodaiinteriors@gmail.com
+              </a>
             </div>
             <div className='flex items-center text-base text-white  mb-4'>
               <FaGlobe className='text-primary mr-5 scale-125 ms:mr-3' />
-              <p className='leading-tight text-xl ms:text-lg'>kodaiinteriors.com</p>
+              <a href='/' className='leading-tight text-xl ms:text-lg'>
+                kodaiinteriors.com
+              </a>
             </div>
             <div className='border-t-2 border-primary -ml-6 -mr-10 ms:-ml-4'>
               <div className='flex justify-around items-center pt-7 pb-1 text-white w-full ms:pb-0  '>
-                <FaInstagramSquare className='scale3x -mt-2 ms:mt-0' />
-                <FaFacebookSquare className='scale3x -mt-2 ms:mt-0' />
-                <FaLinkedin className='scale3x -mt-2 ms:mt-0' />
-                <FaYoutube className='scale3x -mt-2 ms:mt-0' />
+                <a href='#' rel='noreferrer'>
+                  <FaInstagramSquare className='scale3x -mt-2 ms:mt-0' />
+                </a>
+                <a href='https://wa.me/917068719535' target='_blank' rel='noreferrer'>
+                  <FaWhatsappSquare className='scale3x -mt-2 ms:mt-0' />
+                </a>
+                <a href='#' rel='noreferrer'>
+                  <FaFacebookSquare className='scale3x -mt-2 ms:mt-0' />
+                </a>
+                <a href='#' rel='noreferrer'>
+                  <FaLinkedin className='scale3x -mt-2 ms:mt-0' />
+                </a>
+                <a href='#' rel='noreferrer'>
+                  <FaYoutube className='scale3x -mt-2 ms:mt-0' />
+                </a>
               </div>
             </div>
           </div>
           {/* right container */}
           <a className='cursor-pointer' href='' rel='noreferrer '>
-            <Image src='/location.jpg' height='385' width='400' />
+            {/* <Image src='/location.jpg' height='385' width='400' /> */}
+            {/* <iframe
+              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887.819793748272!2d77.61051301611302!3d13.056846275705809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae177e49b330d1%3A0x320c264ef9c6d041!2sDasarahalli%2C%20Bengaluru%2C%20Karnataka%20560092!5e0!3m2!1sen!2sin!4v1631455581801!5m2!1sen!2sin'
+              width='600'
+              height='450'
+              // style='border:0;'
+              allowfullscreen=''
+              loading='lazy'
+            ></iframe> */}
+
+            <iframe
+              src='http://maps.google.com/maps?q=13.056893,77.611179&z=15&output=embed'
+              className='w-96 h-96'
+            ></iframe>
           </a>
         </div>
       </main>
-      <hr className='bg-primary h-5 mt-14 w-full border-0 ms:mt-6 ms:h-3' />
+      <hr className='bg-primary h-4 mt-14 w-full border-0 ms:mt-6 ms:h-3' />
     </div>
   );
 }

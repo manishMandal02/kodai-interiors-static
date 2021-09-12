@@ -32,19 +32,25 @@ body {
 /* underline customization  */
 .custom-underline {
   text-decoration: underline;
-  text-decoration-color: red;
+  text-decoration-color: #ff7b3d;
   text-decoration-thickness: 3px;
 }
 
 /* scale */
-.scale2x {
-  transform: scale(1.8);
-}
-
 .scale3x {
   transform: scale(2.5);
 }
 
-.boder-2 {
-  border-bottom: 2px solid red;
+.menu-item {
+  border-bottom: 2px solid transparent;
+  margin-bottom: -0.2px;
+  transition: all 0.18s;
+}
+
+.menu-item:hover {
+  border-bottom: 2.5px solid #ff7b3d;
+}
+
+.menu-item:focus {
+  border-bottom: 2.5px solid #ff7b3d;
 }
