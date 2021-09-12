@@ -28,6 +28,19 @@ module.exports = {
       fontSize: {
         '8xl': '5.5rem',
       },
+      margin: {
+        '-13': '-3.3rem',
+      },
+      translate: {
+        '-5/6': '-85%',
+        '1/5': '12%',
+      },
+      scale: {
+        200: '2.6',
+      },
+      screens: {
+        ms: { max: '850px' },
+      },
     },
   },
   variants: {

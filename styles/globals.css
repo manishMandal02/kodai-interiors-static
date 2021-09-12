@@ -42,5 +42,9 @@ body {
 }
 
 .scale3x {
-  transform: scale(2.8);
+  transform: scale(2.5);
+}
+
+.boder-2 {
+  border-bottom: 2px solid red;
 }
