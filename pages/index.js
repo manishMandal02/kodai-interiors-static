@@ -52,16 +52,20 @@ export default function Home() {
     <>
       <Head>
         <meta name='google-site-verification' content='YDJtUvqI0Zj0h9Jm8FJet99_n57jJjM2ZzvB8dBq4WI' />
+        <meta
+          name='keywords'
+          content='interior designer, interiors design company,  interiors designer bangalore, interiors desgin  bangalore, kodai interiors interior designers decorators in bangalore'
+        />
       </Head>
       <NextSeo
         title='Interior Designers, Decorators in Bangalore | KODAI Interiors'
-        description='Kodai Interiors provides design to build interior services specializing in both residential and commercial designs.'
+        description='Kodai Interiors provides design to build interior services specializing in both residential and commercial designs'
         canonical='https://www.kodaiinteriors.com/'
         openGraph={{
           url: 'https://www.kodaiinteriors.com/',
           title: 'Interior Designers, Decorators in Bangalore | KODAI Interiors',
           description:
-            'Kodai Interiors provides design to build interior services specializing in both residential and commercial designs.',
+            'Kodai Interiors provides design to build interior services specializing in both residential and commercial designs',
           images: [
             {
               url: 'https://www.kodaiinteriors.com/header-logo.svg',
