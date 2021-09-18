@@ -417,19 +417,14 @@ export default function Home() {
             </div>
             {/* right container */}
             <a className='cursor-pointer' href='' rel='noreferrer '>
-              {/* <Image src='/location.jpg' height='385' width='400' /> */}
-              {/* <iframe
-              src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d887.819793748272!2d77.61051301611302!3d13.056846275705809!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bae177e49b330d1%3A0x320c264ef9c6d041!2sDasarahalli%2C%20Bengaluru%2C%20Karnataka%20560092!5e0!3m2!1sen!2sin!4v1631455581801!5m2!1sen!2sin'
-              width='600'
-              height='450'
-              // style='border:0;'
-              allowfullscreen=''
-              loading='lazy'
-            ></iframe> */}
-
               <iframe
-                src='http://maps.google.com/maps?q=13.056893,77.611179&z=15&output=embed'
-                className='w-96 h-96'
+                width='390'
+                height='385'
+                frameborder='0'
+                scrolling='no'
+                marginheight='0'
+                marginwidth='0'
+                src='https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=13.056919,%2077.611145+(Kodai%20Interiors)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
               ></iframe>
             </a>
           </div>
