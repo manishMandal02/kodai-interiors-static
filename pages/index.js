@@ -5,11 +5,12 @@ import {
   FaPhoneAlt,
   FaEnvelope,
   FaGlobe,
-  FaInstagramSquare,
-  FaFacebookSquare,
-  FaLinkedin,
+  FaInstagram,
+  FaLinkedinIn,
   FaYoutube,
-  FaWhatsappSquare,
+  FaGoogle,
+  FaFacebookF,
+  FaWhatsapp,
 } from 'react-icons/fa';
 import { IoIosArrowForward } from 'react-icons/io';
 import { NextSeo } from 'next-seo';
@@ -17,7 +18,6 @@ import Head from 'next/head';
 
 export default function Home() {
   //seo
-
   let myButton;
   if (process.browser) {
     window.onscroll = function () {
@@ -151,7 +151,7 @@ export default function Home() {
               {/* sub-text */}
               <p
                 className='text-gray-400 text-3xl font-normal font-poppins py-6 pl-1 flex items-end
-              ms:text-2xl ms:pl-0 ms:py-4
+              ms:text-xl ms:pl-0 ms:py-4
             '
               >
                 We design with people in mind
@@ -160,13 +160,13 @@ export default function Home() {
 
               <div className='flex justify-start items-center w-full mt-4 ms:justify-center'>
                 <button
-                  className='text-gray-900 bg-yellow1 flex text-xl font-bold items-center mr-8 rounded-sm py-2 pl-4 pr-3'
+                  className='text-gray-900 bg-yellow1 flex text-lg font-bold items-center mr-8 rounded-sm py-2 pl-4 pr-3'
                   onClick={() => goToSection('services')}
                 >
                   Our Services <FiArrowUpRight className='ml-1' />
                 </button>
                 <button
-                  className='text-white flex text-xl font-medium items-center justify-center'
+                  className='text-white flex text-lg font-medium items-center justify-center'
                   onClick={() => goToSection('projects')}
                 >
                   View Projects
@@ -312,126 +312,136 @@ export default function Home() {
             </div>
           </div>
           {/* team section */}
-          <div className='w-full m-w-full -mt-6 '>
+          {/* <div className='w-full m-w-full -mt-6 '>
             <img src='/our-team-divider.svg' className='ms:scale-200 ms:-ml-4' />
           </div>
           <div className='flex flex-wrap flex-row px-26 justify-center items-center my-14 ms:my-12 '>
             <div className='mx-8 my-5 ms:mx-5 ms:my-2'>
-              <Image src='/avatar-1.jpg' height='270' width='320' alt='residential design' />
-              <div className=' text-white flex justify-center pl-2 flex-col items-start font-normal py-2 font-poppins text-xl border-2 border-primary -mt-2 bg-red-500'>
+              <Image
+                src='/abhishek-maddheshiya.jpg '
+                height='270'
+                width='320'
+                alt='residential design'
+                className='rounded-md rounded-b-none'
+              />
+              <div className=' text-white flex justify-center pl-2 flex-col items-start font-normal py-2 font-poppins text-xl  rounded-sm rounded-t-none -mt-2 bg-red-500'>
                 Abhishek Maddheshiya
                 <p className='font-light text-base text-gray-100 -mt-1'>Founder, Creative Director</p>
               </div>
             </div>
-            <div className='mx-8 my-5 ms:mx-5 ms:my-2'>
-              <Image src='/avatar-1.jpg' height='270' width='320' alt='commercial design' />
-              <div className=' text-white flex justify-center pl-2 flex-col items-start font-normal py-2 font-poppins text-xl border-2 border-primary -mt-2 bg-red-500'>
-                Abhishek Maddheshiya
-                <p className='font-light text-base text-gray-100 -mt-1'>Founder, Creative Director</p>
-              </div>
-            </div>
-            <div className='mx-8 my-5 ms:mx-5 ms:my-2'>
-              <Image src='/avatar-1.jpg' height='270' width='320' alt='corporate design' />
-              <div className=' text-white flex justify-center pl-2 flex-col items-start font-normal py-2 font-poppins text-xl border-2 border-primary -mt-2 bg-red-500'>
-                Abhishek Maddheshiya
-                <p className='font-light text-base text-gray-100 -mt-1'>Founder, Creative Director</p>
-              </div>
-            </div>
-            <div className='mx-8 my-5 ms:mx-5 ms:my-2'>
-              <Image src='/avatar-1.jpg' height='270' width='320' alt='hospitality design' />
-              <div className=' text-white flex justify-center pl-2 flex-col items-start font-normal py-2 font-poppins text-xl border-2 border-primary -mt-2 bg-red-500'>
-                Abhishek Maddheshiya
-                <p className='font-light text-base text-gray-100 -mt-1'>Founder, Creative Director</p>
-              </div>
-            </div>
-            <div className='mx-8 my-5 ms:mx-5 ms:my-2'>
-              <Image src='/avatar-1.jpg' height='270' width='320' alt='restaurant design' />
-              <div className=' text-white flex justify-center pl-2 flex-col items-start font-normal py-2 font-poppins text-xl border-2 border-primary -mt-2 bg-red-500'>
-                Abhishek Maddheshiya
-                <p className='font-light text-base text-gray-100 -mt-1'>Founder, Creative Director</p>
-              </div>
-            </div>
-            <div className='mx-8 my-5 ms:mx-5 ms:my-2'>
-              <Image src='/avatar-1.jpg' height='270' width='320' alt='industrial design' />
-              <div className=' text-white flex justify-center pl-2 flex-col items-start font-normal py-2 font-poppins text-xl border-2 border-primary -mt-2 bg-red-500'>
-                Abhishek Maddheshiya
-                <p className='font-light text-base text-gray-100 -mt-1'>Founder, Creative Director</p>
-              </div>
-            </div>
-          </div>
+          </div> */}
           {/* contact section */}
-          <div className='w-full m-w-full -mt-4' id='contact-us'>
+          <div className='w-full m-w-full mt-1' id='contact-us'>
             <img src='/contact-us-divider.svg' className='ms:scale-200 ms:-ml-4' />
           </div>
           <div className='flex justify-evenly items-center my-12 ms:flex-col-reverse'>
             {/* left container */}
-            <div className='border-2 border-primary pl-6 pr-10 py-4  h-96 ms:mt-6 ms:pl-4 ms:py-2 ms:w-full ms:border-l-0 ms:border-r-0'>
-              <p className='text-white font-medium font-poppins text-3xl mb-5 ms:text-2xl ms:mb-3'>
-                CONTACT INFORMATION
-              </p>
-              <div className='flex items-center text-base text-white mb-5'>
-                <FaMapMarkerAlt className='text-primary mr-5 scale-150  -mt-6 ms:mr-3 ms:-mt-8' />
-                <p className='leading-6 text-xl ms:text-lg ms:leading-6'>
-                  #51, Dasarahalli main road,
-                  <br /> Hebbal, Kempapura,
-                  <br /> Bangalore - 560024
-                </p>
-              </div>
-              <div className='flex items-center text-base text-white  mb-5'>
-                <FaPhoneAlt className='text-primary mr-4 scale-125 ms:mr-3' />
-                <a href='tel:7068719535' className='leading-tight text-xl ms:text-lg ms:leading-6'>
-                  +91 7068719535
-                  <br />
-                  +91 9513882717
-                </a>
-              </div>
-              <div className='flex items-center text-base text-white  mb-5'>
-                <FaEnvelope className='text-primary mr-5 scale-125 ms:mr-3' />
-                <a href='mailto:kodaiinteriors.com' className='leading-tight text-xl ms:text-lg'>
-                  kodaiinteriors@gmail.com
-                </a>
-              </div>
-              <div className='flex items-center text-base text-white  mb-4'>
-                <FaGlobe className='text-primary mr-5 scale-125 ms:mr-3' />
-                <a href='/' className='leading-tight text-xl ms:text-lg'>
-                  kodaiinteriors.com
-                </a>
-              </div>
-              <div className='border-t-2 border-primary -ml-6 -mr-10 ms:-ml-4'>
-                <div className='flex justify-around items-center pt-7 pb-1 text-white w-full ms:pb-0  '>
-                  <a href='#' rel='noreferrer'>
-                    <FaInstagramSquare className='scale3x -mt-2 ms:mt-0' />
+            <div className='relative flex flex-col justify-between items-start border-2  border-yellow-500 rounded-sm pl-4 pr-7 py-4   height22 width22 ms:mt-4 ms:pl-4 ms:py-4 ms:w-full ms:border-l-0 ms:border-r-0'>
+              <p className='text-white font-medium text-2xl ms:text-2xl mt-1 ms:mt-0 '>Contact Information</p>
+              <div className='-mt-3'>
+                <div className='flex items-center text-base text-white mb-3'>
+                  <FaMapMarkerAlt className=' mr-3 scale-x-110  ' />
+                  <p className=' text-base ms:text-base '>
+                    {/* #51, Dasarahalli main road, */}
+                    {/* <br /> , Kempapura, */}
+                    Hebbal, Bangalore - 560024
+                  </p>
+                </div>
+
+                <div className='flex items-center text-base text-white  mb-3'>
+                  <FaEnvelope className=' mr-3 scale-110 ms:mr-2' />
+                  <a href='mailto:kodaiinteriors.com' className=' text-base ms:text-base'>
+                    kodaiinteriors@gmail.com
                   </a>
-                  <a href='https://wa.me/917068719535' target='_blank' rel='noreferrer'>
-                    <FaWhatsappSquare className='scale3x -mt-2 ms:mt-0' />
+                </div>
+                <div className='flex items-center text-base text-white  mb-3'>
+                  <FaGlobe className=' mr-3 scale-110 ms:mr-2' />
+                  <a href='/' className=' text-base ms:text-base'>
+                    kodaiinteriors.com
                   </a>
-                  <a href='#' rel='noreferrer'>
-                    <FaFacebookSquare className='scale3x -mt-2 ms:mt-0' />
-                  </a>
-                  <a href='#' rel='noreferrer'>
-                    <FaLinkedin className='scale3x -mt-2 ms:mt-0' />
-                  </a>
-                  <a href='#' rel='noreferrer'>
-                    <FaYoutube className='scale3x -mt-2 ms:mt-0' />
+                </div>
+                <div className='flex items-center   text-base text-white '>
+                  <FaPhoneAlt className=' mr-2 scale-100 ms:mr-2' />
+                  <a href='tel:7068719535' className=' text-base ms:text-base ms:leading-6'>
+                    +91 7068719535 | +91 9513882717
                   </a>
                 </div>
               </div>
+
+              <div className='flex justify-center items-star flex-col  text-white  w-full '>
+                <div className='flex  '>
+                  <a
+                    href='#'
+                    rel='noreferrer'
+                    target='_blank'
+                    className='hover:bg-white hover:scale-105 duration-150 bg-gradient-to-r from-primary via-yellow-400 to-primary p-3 rounded-full'
+                  >
+                    <FaGoogle className='scale-125 ' />
+                  </a>
+
+                  <a
+                    href='https://wa.me/917068719535'
+                    target='_blank'
+                    rel='noreferrer'
+                    className='hover:bg-white ml-4 hover:scale-105 duration-150 bg-gradient-to-r from-primary via-yellow-400 to-primary   p-3 rounded-full'
+                  >
+                    <FaWhatsapp className='scale-150' />
+                  </a>
+                  <a
+                    href='https://www.linkedin.com/in/kodai-interiors-08016b21b/'
+                    rel='noreferrer'
+                    target='_blank'
+                    className='hover:bg-white ml-4 hover:scale-105 duration-150 bg-gradient-to-r from-primary via-yellow-400 to-primary  p-3 rounded-full'
+                  >
+                    <FaLinkedinIn className='scale-150   ' />
+                  </a>
+                </div>
+                <div className='flex mt-3'>
+                  <a
+                    href='https://www.instagram.com/kodaiinteriors/'
+                    rel='noreferrer'
+                    target='_blank'
+                    className='hover:bg-white hover:scale-105 duration-150 bg-gradient-to-r from-primary via-yellow-400 to-primary   p-3 rounded-full'
+                  >
+                    <FaInstagram className='scale-150' />
+                  </a>
+
+                  <a
+                    href='https://www.facebook.com/Kodai-interiors-105107095296521'
+                    rel='noreferrer'
+                    target='_blank'
+                    className='hover:bg-white ml-4 hover:scale-105 duration-150 bg-gradient-to-r from-primary via-yellow-400 to-primary  p-3 rounded-full'
+                  >
+                    <FaFacebookF className='scale2x ' />
+                  </a>
+                  <a
+                    href='https://www.youtube.com/channel/UCZFYoaiO-NK3ipp369Unqjg'
+                    rel='noreferrer'
+                    target='_blank'
+                    className='hover:bg-white ml-4 hover:scale-105 duration-150 bg-gradient-to-r from-primary via-yellow-400 to-primary   p-3 rounded-full'
+                  >
+                    <FaYoutube className='scale-150' />
+                  </a>
+                </div>
+              </div>
+              <img src='./contact-qr.svg' className='w-24 absolute bottom-3 right-3' />
             </div>
             {/* right container */}
             <a className='cursor-pointer' href='' rel='noreferrer '>
               <iframe
-                width='390'
-                height='385'
+                src='https://www.google.com/maps/embed?z=80&pb=!1m14!1m8!1m3!1d15546.736951719087!2d77.610415!3d13.05576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbdff4a7e603bed96!2sKODAI%20Interiors!5e0!3m2!1sen!2sin!4v1639302781118!5m2!1sen!2sin'
+                width='400'
+                height='350'
+                allowfullscreen=''
                 frameborder='0'
                 scrolling='no'
                 marginheight='0'
                 marginwidth='0'
-                src='https://maps.google.com/maps?width=100%25&amp;height=300&amp;hl=en&amp;q=13.056919,%2077.611145+(Kodai%20Interiors)&amp;t=&amp;z=13&amp;ie=UTF8&amp;iwloc=B&amp;output=embed'
               ></iframe>
             </a>
           </div>
         </main>
-        <hr className='bg-primary h-4 mt-14 w-full border-0 ms:mt-6 ms:h-3' />
+        <hr className='bg-primary h-3 mt-14 w-full border-0 ms:mt-6 ms:h-3' />
       </div>
     </>
   );

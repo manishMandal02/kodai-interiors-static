@@ -21,6 +21,7 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
+  font-family: 'Poppins', sans-serif;
 }
 
 /* clipping hero-image-slider */
@@ -37,10 +38,15 @@ body {
 }
 
 /* scale */
-.scale3x {
-  transform: scale(2.5);
+.scale2x {
+  transform: scale(1.35);
 }
-
+.height22 {
+  height: 21.65rem;
+}
+.width22 {
+  width: 22.2rem;
+}
 .menu-item {
   border-bottom: 2px solid transparent;
   margin-bottom: -0.2px;
