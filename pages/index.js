@@ -82,7 +82,7 @@ export default function Home() {
       <div className='bg-mainbg overflow-x-hidden'>
         <nav
           id='navbar'
-          className={`flex justify-around items-center h-20  pt-1 ms:overflow-hidden ms:justify-between ms:shadow-lg   fixed w-full bg-mainbg z-30 ms:flex-1 ms:flex-wrap ms:h-24 ms:items-center ms:pt-2`}
+          className={`flex justify-around items-center h-24  pt-1 ms:overflow-hidden ms:justify-between ms:shadow-lg   fixed w-full bg-mainbg z-30 ms:flex-1 ms:flex-wrap ms:h-24 ms:items-center ms:pt-2`}
         >
           <a href='#'>
             <img
@@ -132,7 +132,7 @@ export default function Home() {
           </ul>
         </nav>
         <main>
-          <div className='flex my-14 ms:flex-col-reverse  mt-28 ms:mt-20'>
+          <div className='flex ms:flex-col-reverse  mt-52 mb-36 ms:mt-20'>
             <div className='w-9/12 pl-28 z-10 relative left-10 mt-4 ms:w-full ms:pl-2 ms:left-0'>
               {/* main text */}
               <div className='flex flex-col justify-end ms:-mt-2'>
