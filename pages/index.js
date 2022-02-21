@@ -70,9 +70,9 @@ export default function Home() {
             Kodai Interiors provides design to build services specializing in both residential and commercial designs. We apply the highest standards of design excellence and continuously create a memorable brand experience for our clients while enhancing the quality of life for all we serve.`,
           images: [
             {
-              url: 'https://www.kodaiinteriors.com/header-logo.svg',
-              width: 300,
-              height: 350,
+              url: 'https://www.kodaiinteriors.com/og-image.png',
+              width: 1800,
+              height: 700,
               alt: 'Kodai Interiors',
             },
           ],
@@ -371,7 +371,7 @@ export default function Home() {
               <div className='flex justify-center items-star flex-col  text-white  w-full '>
                 <div className='flex  '>
                   <a
-                    href='#'
+                    href='https://g.page/r/CZbtO2B-Sv-9EA0'
                     rel='noreferrer'
                     target='_blank'
                     className='hover:bg-white hover:scale-105 duration-150 bg-gradient-to-r from-primary via-yellow-400 to-primary p-3 rounded-full'
